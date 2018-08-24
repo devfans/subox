@@ -1,0 +1,24 @@
+[package]
+name = "subox"
+version = "0.0.1"
+authors = ["Stefan Liu"]
+
+[[bin]]
+name = "subox"
+path = "src/subox.rs"
+
+[profile.release]
+panic = "abort"
+[profile.dev]
+panic = "abort"
+
+[dependencies]
+http = "0.1.10"
+tokio = "0.1"
+tokio-io = "0.1"
+tokio-codec = "0.1"
+serde_json = "1.0"
+futures = "0.1"
+bytes = "0.4"
+hyper = "0.12.8" 
+hyper-tls = "0.3.0"
